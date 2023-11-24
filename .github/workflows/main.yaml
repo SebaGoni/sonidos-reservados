@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@master
-      - uses: jakejarvis/aws-s3-sync-action@master
+      - uses: jakejarvis/s3-sync-action@master
         with:
           args: --source=./build --region=us-east-1 s3://sonidos-reservados-front
         env:
